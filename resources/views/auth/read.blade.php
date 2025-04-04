@@ -37,12 +37,6 @@
             <div class="mb-3">
                 <strong>Email:</strong> {{ $user->email }}
             </div>
-            <div class="mb-3">
-                <strong>Phone:</strong> {{ $user->phone }}
-            </div>
-            <div class="mb-3">
-                <strong>Address:</strong> {{ $user->address }}
-            </div>
             <div class="d-flex justify-content-between">
                 <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" class="btn btn-warning btn-sm">Edit</a>
                 <a href="{{ route('user.deleteUser', ['id' => $user->id]) }}" class="btn btn-danger btn-sm">Delete</a>

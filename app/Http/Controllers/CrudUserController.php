@@ -47,16 +47,12 @@ class CrudUserController extends BaseController
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6|confirmed',
-            'phone' => 'required|string|max:15',
-            'address' => 'required|string|max:255',
         ]);
 
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'phone' => $request->phone,
-            'address' => $request->address,
         ]);
 
         return redirect()->route('user.list')->with('success', 'Registration successful!');
@@ -92,15 +88,11 @@ class CrudUserController extends BaseController
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,'.$id,
-            'phone' => 'required|string|max:15',
-            'address' => 'required|string|max:255',
         ]);
 
         $user->update([
             'name' => $request->name,
             'email' => $request->email,
-            'phone' => $request->phone,
-            'address' => $request->address,
         ]);
 
         return redirect()->route('user.list')->with('success', 'User updated!');

@@ -40,16 +40,6 @@
                     @error('email')<span class="text-danger">{{ $message }}</span>@enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Phone</label>
-                    <input type="text" class="form-control" name="phone" value="{{ old('phone', $user->phone) }}" required>
-                    @error('phone')<span class="text-danger">{{ $message }}</span>@enderror
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Address</label>
-                    <input type="text" class="form-control" name="address" value="{{ old('address', $user->address) }}" required>
-                    @error('address')<span class="text-danger">{{ $message }}</span>@enderror
-                </div>
-                <div class="mb-3">
                     <label class="form-label">Password</label>
                     <input type="password" class="form-control" name="password" required>
                     @error('password')<span class="text-danger">{{ $message }}</span>@enderror
