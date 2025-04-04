@@ -53,11 +53,9 @@
                 <button type="submit" class="btn btn-primary w-100">Login</button>
                 <div class="text-center mt-3">
                     <p>Don't have an account? <a href="{{ route('user.createUser') }}">Register</a></p>
+                    <p class="mb-3">---------- or ----------</p>
                 </div>
-            </form>
-            <div class="text-center mt-3">
-                <a href="{{ url('auth/google') }}" class="btn btn-danger">Login with Google</a>
-            </div>
+                <a href="{{ url('auth/google') }}" class="btn btn-danger w-100">Sign up with Google</a>
         </div>
     </div>
 
