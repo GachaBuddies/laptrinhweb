@@ -24,7 +24,7 @@
     </nav>
 
     <!-- Register Form -->
-    <div class="container d-flex justify-content-center align-items-center" style="height: 120vh;">
+    <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
         <div class="card p-4" style="width: 350px;">
             <h4 class="text-center mb-3">Register</h4>
             <form action="{{ route('user.postUser') }}" method="POST">
@@ -51,9 +51,7 @@
                 <button type="submit" class="btn btn-dark w-100">Sign Up</button>
                 <div class="text-center mt-3">
                     <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>
-                    <p class="mb-3">---------- or ----------</p>
                 </div>
-                <a href="{{ url('auth/google') }}" class="btn btn-danger w-100">Sign up with Google</a>
             </form>
         </div>
     </div>
