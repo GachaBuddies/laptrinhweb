@@ -48,10 +48,6 @@
                     <label class="form-label">Confirm Password</label>
                     <input type="password" class="form-control" name="password_confirmation" required>
                 </div>
-                <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" name="remember">
-                    <label class="form-check-label">Remember Me</label>
-                </div>
                 <button type="submit" class="btn btn-dark w-100">Sign Up</button>
                 <div class="text-center mt-3">
                     <p>Already have an account? <a href="{{ route('login') }}">Login</a></p>

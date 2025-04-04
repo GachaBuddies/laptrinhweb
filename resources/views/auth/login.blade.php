@@ -43,6 +43,10 @@
                         <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
                 </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" name="remember">
+                    <label class="form-check-label">Remember Me</label>
+                </div>
                 <div class="mb-3 d-flex justify-content-between">
                     <a href="#">Forgot password?</a>
                 </div>
